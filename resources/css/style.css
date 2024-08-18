@@ -1,0 +1,394 @@
+
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+
+
+body {
+    background-color: #000;
+    font-family: 'Poppins', 'arial';
+  
+    font-size: 20px; 
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 300%;  
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #8a380f;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px
+}
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+section {
+    padding: 50px 0;
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+header{
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+  
+}
+
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+
+}
+.hero-logo-box {
+   height:80%;
+   width:100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding
+}
+.hero-logo-box img {
+    height: 350px;
+    width: auto;  
+}
+@media(max-width:500px){
+
+}
+/* ----------------------------------------------- */
+/* main nav */
+/* ----------------------------------------------- */
+nav{
+   height: 60px;
+    background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.links-container{
+    height: 100%;
+    width: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5%;
+}
+nav a {
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+nav a:hover{
+    background-color:  #8a380f;
+}
+
+#sidebar-active{
+    display:none;
+}
+ .open-sidebar-button,.close-sidebar-button {
+    
+    display: none;
+}
+
+
+nav img{
+    height: 50px;
+    width: auto;
+    z-index: 10;
+    display: flex;
+    margin-right: auto;
+}
+
+@media(max-width:500px){
+}
+/* ----------------------------------------------- */
+/* the bar*/
+/* ----------------------------------------------- */
+
+
+
+
+.the-bar{
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),url(img/the-bar.jpg);
+        
+}
+
+.the-bar-items{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+}
+.the-bar-items p { 
+    width: 75%;
+    line-height: 145%;
+    text-align: center;
+ }
+
+.the-bar-items img {
+    width: 50%;
+    height: 60%;
+    margin-top: 3%;
+}
+
+@media(max-width:500px){
+   .the-bar-items p { 
+    width:75%;
+    line-height: 145%;
+    text-align: center;
+ }
+ 
+    
+    
+}
+/* ----------------------------------------------- */
+/* Gallery */
+/* ----------------------------------------------- */
+
+
+.gallery-photos{
+  background-color: #000;
+  padding:0;
+ display: flex;
+ flex-direction: column;
+}
+
+.gallery-1{
+    display: flex;
+  flex-direction: row;
+    justify-content:space-evenly;
+    
+}
+.gallery-2{
+    display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  
+}
+ .gallery-1 img{
+      
+   width: 33%;
+  height: auto;
+     
+}
+.gallery-2 img{
+ width: 33%;
+  height: auto;
+}
+@media(max-width:500px){
+ 
+}
+
+/* ----------------------------------------------- */
+/* TESTIMONIALS */
+/* ----------------------------------------------- */
+
+.about-us {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),url(img/hero.jpg);
+    background-image:inear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);  
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.cite-container{
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.testimonial p:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: relative;
+}
+
+.testimonial{
+    width: 25%;    
+}
+
+cite{
+    margin-left: 60%;
+    align-items: center;
+}
+
+ cite img{
+    max-height: 25px;
+    width: auto;
+    margin right: %;
+    vertical-align: middle; 
+    }
+
+
+
+@media(max-width:500px){
+
+
+}
+
+
+
+/* ----------------------------------------------- */
+/* SECTION RULES */
+/* ----------------------------------------------- */
+
+
+
+.rules { 
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-image:url(img/back-costumers.png);
+        
+}
+
+.rules-img-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%;
+    width: auto;
+    
+}
+.rules-img-container img {
+    height:600px;
+    width:auto;
+}
+@media(max-width:500px){
+    
+}
+
+  
+
+
+
+
+
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+    background-color: #000;
+    padding: 30px;
+    color: #8a7861;
+    text-transform: uppercase;
+    font-size: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.upper-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+    
+}
+.block {
+    display: block;
+    height: 1px;
+    background-color: #8a380f;
+    content: " ";
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+  
+}
+
+.contacts{
+
+    flex-direction: row;
+    justify-content: center;
+}
+
+.creditors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 60%;
+}
+
+.boadas-credits{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-style: italic;
+}
+footer svg{
+    height:25px;
+    margin-right:7px;
+}
+
+footer i {
+    color: #8a380f;
+}
+
+
+
+
+
