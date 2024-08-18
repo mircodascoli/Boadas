@@ -9,7 +9,7 @@
 body {
     background-color: #000;
     font-family: 'Poppins', 'arial';
-  
+    color: #fff;
     font-size: 20px; 
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
