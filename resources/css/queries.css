@@ -84,15 +84,15 @@
     justify-content:space-evenly;
   
 }
- .gallery-1 img{
-      
-   width: 100%;
-  height: auto;
+.gallery-1 img{
+    height: 100%;
+    width:auto;
      
 }
-.gallery-2 img{
- width: 100%;
-  height: auto;
+
+  .gallery-2 img{
+    height: 100%;
+    width:auto;
 }  
 
     .cite-container{
