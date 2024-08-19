@@ -1,3 +1,5 @@
+
+
 /* ----------------------------------------------- */
 /* BASIC SETUP */
 /* ----------------------------------------------- */
@@ -48,7 +50,9 @@ h2:after {
 header{
     height: 100vh;
      width: 100vw;
+    
     }
+
 .full-screen-video-container{
     overflow: hidden;
     position: relative;
@@ -71,10 +75,10 @@ header{
 .hero-logo-box {
    height:80%;
    width:100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    z-index: 2;
+   position: absolute;
+     display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
 .hero-logo-box img {
@@ -86,7 +90,7 @@ header{
 /* main nav */
 /* ----------------------------------------------- */
 nav{
-    height: 60px;
+    height: 70px;
     width: 100%;
     background-color: #000;
     display: flex;
@@ -131,6 +135,7 @@ nav img{
     margin-right: auto;
 }
 
+
 @media(max-width:500px){
 }
 /* ----------------------------------------------- */
@@ -148,8 +153,7 @@ nav img{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),url(img/the-bar.jpg);
-        
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),url(img/the-bar.jpg);      
 }
 
 .the-bar-items{
@@ -159,6 +163,7 @@ nav img{
     align-items: center;
     width:100%;
 }
+
 .the-bar-items p { 
     width: 75%;
     line-height: 145%;
@@ -368,5 +373,6 @@ footer svg{
 footer i {
     color: #8a380f;
 }
+
 
 
