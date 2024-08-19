@@ -296,8 +296,8 @@ cite{
 }
 
 .rules-img-container img {
-    height:auto;
-    width:75%;
+    height:500px;
+    width:auto;
 }
 
 @media(max-width:500px){
