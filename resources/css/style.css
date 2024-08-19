@@ -1,3 +1,8 @@
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -145,7 +150,6 @@ nav img{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; 
-    background-attachment: fixed;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),url(img/the-bar.jpg);
         
 }
@@ -228,7 +232,7 @@ nav img{
     background-size: cover;
     background-repeat: no-repeat; 
     color: #fff;
-    background-attachment: fixed;
+    
 }
 
 .cite-container{
@@ -283,18 +287,19 @@ cite{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
-    background-attachment: fixed;
-    background-image:url(img/back-costumers.png);
-        
+    background-image:url(img/back-costumers.png);   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.rules-img-container {
+.rules-img-container {   
     
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 90%;
-    width: 100%;
+    width: 90%;
     
 }
 .rules-img-container img {
@@ -375,6 +380,5 @@ footer svg{
 footer i {
     color: #8a380f;
 }
-
 
 
