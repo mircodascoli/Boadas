@@ -1,5 +1,4 @@
 
-
 /* ----------------------------------------------- */
 /* BASIC SETUP */
 /* ----------------------------------------------- */
@@ -16,7 +15,7 @@ body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     box-sizing: border-box;
-    
+    color:#fff;
 }
 
 section {
@@ -31,7 +30,8 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 200;
-    font-size: 300%;  
+    font-size: 300%; 
+    color: #fff;
 }
 
 h2:after {
@@ -40,9 +40,21 @@ h2:after {
     background-color: #8a380f;
     content: " ";
     width: 100px;
-    margin: 0 auto;
-    margin-top: 30px
+    margin: 8% auto;
+  
 }
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-style: oblique;
+    font-size: 130%; 
+    color: #fff;
+    background-color: #000;
+    border-radius: 10%;
+    
+}
+
 
 /* ----------------------------------------------- */
 /* HEADER */
@@ -154,18 +166,19 @@ nav img{
     background-position: center center;
     background-repeat: no-repeat; 
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),url(img/the-bar.jpg);
-        
+    display: flex;
+      flex-direction: column;
 }
 
 .the-bar-items{
     display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width:100%;
 }
 .the-bar-items p { 
-    margin-top: 4%;
+    margin-bottom: 3%;
     width: 75%;
     line-height: 145%;
     text-align: center;
@@ -226,22 +239,27 @@ nav img{
 .about-us {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),url(img/hero.jpg);
     background-image:inear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(img/hero.jpg);  
-    height: 100%;
+     height: 100%;
     width: 100%;
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
+  
     
 }
-
+.about-us h2:after {
+   
+    margin: 4% auto;
+}
 .cite-container{
     font-style: italic;
     line-height: 145%;
     position: relative;
-    margin-top: 40px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: center;
+  
 }
 
 .testimonial p:before {
@@ -252,7 +270,9 @@ nav img{
 }
 
 .testimonial{
-    width: 55%;    
+    width: 55%;   
+     margin-left: 2%;
+    margin-right: 2%;
 }
 
 cite{
@@ -285,26 +305,65 @@ cite{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
-    background-image:url(img/back-costumers.png);   
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),url(img/back-costumers.png);   
     display: flex;
+   flex-direction: column;
+   align-items: center;
+    
+}
+
+
+.rules-container{
+    display:flex;
     flex-direction: row;
-    justify-content: center;
-}
-
-.rules-img-container {   
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 90%;
+    justify-content: space-evenly;
+    height: 50%;
     width: 90%;
+    color: #fff;
+    text-align: center;
+    }
+.rules-container p {
+    font-style: italic; 
+    
+} 
+.dresscode{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 80%;
+
+}
+.dresscode ul{
+    list-style: none;
+    margin-bottom: 1%;
+    font-size: 80%;
+    font-style: italic;
+  
     
 }
+.dresscode i{
+        color: #8a7861;
 
-.rules-img-container img {
-    height:500px;
-    width:auto;
 }
+.dresscode p{
+    line-height: 1.8;
+}
+.not-permitted{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+    justify-content: space-evenly; width: 50%;
+    height: 90%;
+}
+.disclaimer{
+  text-decoration: underline;
+    margin-bottom: 5px;
+
+}
+
+
 
 @media(max-width:500px){
     
@@ -327,7 +386,7 @@ footer {
 .upper-footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-around
+    justify-content: space-around;
     
 }
 .block {
@@ -347,9 +406,10 @@ footer {
 }
 
 .contacts{
-
-    flex-direction: row;
-    justify-content: center;
+display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .creditors{
@@ -374,6 +434,5 @@ footer svg{
 footer i {
     color: #8a380f;
 }
-
 
 
