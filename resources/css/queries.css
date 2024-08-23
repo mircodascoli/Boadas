@@ -36,7 +36,10 @@
 }
 
 /* Small phones to small tablets: from 481px to 767px */
+
+
 @media only screen and (max-width: 767px){
+    
     .hero-logo-box img {
     height: 200px;
     width: auto; 
@@ -92,7 +95,9 @@
         width: auto ;
         height: 100%;
     }
-  
+    h3{
+      font-size: 100%;
+    }
   
     .gallery-photos{
        background-color: #000;
@@ -133,4 +138,11 @@
     .rules{
         justify-content: space-around;
     }
+    .dresscode{
+        width: 80%;
+    }
+    .not-permitted{
+     width: 80%;   
+    }
 }
+
