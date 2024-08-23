@@ -1,4 +1,3 @@
-/* Big tablet to 1200px (widths smaller taht the 1140px row) */
 @media only screen and (max-width: 1200px) {
     .rules-img-container img {
     width: 40%;
@@ -130,6 +129,7 @@
     .rules-container{
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
     }
     .rules-container h3{
         margin-bottom: 20px;
@@ -141,8 +141,12 @@
     .dresscode{
         width: 80%;
     }
+    .dresscode p{
+        line-height: 1.0;
+        
+        
+    }
     .not-permitted{
      width: 80%;   
     }
 }
-
