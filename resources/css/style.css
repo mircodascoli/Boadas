@@ -83,12 +83,12 @@ header{
 }
 
 .hero-logo-box {
-   height:80%;
+   height:100%;
    width:100%;
    position: absolute;
-     display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    
 }
 .hero-logo-box img {
